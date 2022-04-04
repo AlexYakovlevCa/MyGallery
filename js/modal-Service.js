@@ -35,4 +35,5 @@ function sendMsg(){
    window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${elPersonAdrs.value}&su=SUBJECT&body=${elPersonMsg.value}`,"_blank")
    elPersonAdrs.value = ''
    elPersonMsg.value = ''
+   openCanvas()
 }

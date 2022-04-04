@@ -24,6 +24,10 @@ h6 {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
 }
+.proj-rows{
+    justify-content: center;
+    gap: 40px;
+}
 section {
     padding: 100px 0;
 }
@@ -84,7 +88,7 @@ body {
 .offcanvas-aside {
     position: fixed;
     height: 100%;
-    background: red;
+    background: radial-gradient( rgba(255,0,0,0), rgba(255,0,0,1));
     width: 80vw;
     right: -80vw;
     z-index: 10;
@@ -117,9 +121,6 @@ body {
     right: 0;
     
 }
-/* .portfolio{
-    margin: auto;
-} */
 
 #mainNav {
     background-color: #222222;
@@ -160,8 +161,7 @@ body {
     color: #fed136;
 }
 @media (min-width: 992px) {
-   
-}
+    
     #mainNav {
         padding-top: 25px;
         padding-bottom: 25px;
@@ -190,7 +190,7 @@ body {
         padding: 12px 0;
     }
    
-
+}
 header.masthead {
     text-align: center;
     color: white;
@@ -247,7 +247,14 @@ header.masthead .intro-text .intro-heading {
     margin: 15px 0;
     text-transform: none;
 }
+.special{
+    background: radial-gradient( rgba(255,0,0,0), rgb(26, 27, 23));
 
+}
+.portfolio{
+    background: radial-gradient( rgba(255,0,0,0), rgb(109, 106, 106));
+
+}
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -294,7 +301,7 @@ header.masthead .intro-text .intro-heading {
     margin: 0 auto;
     padding: 25px;
     text-align: center;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.041);
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
     margin: 0;
@@ -309,6 +316,13 @@ header.masthead .intro-text .intro-heading {
 #portfolio * {
     z-index: 2;
 }
+#portfolio img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: fill;
+    object-position: center;
+}
+
 @media (min-width: 767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px;
@@ -587,7 +601,6 @@ header.masthead .intro-text .intro-heading {
         margin-top: 1rem;
         margin-bottom: 1rem;
     }
-    
 }
 footer {
     padding: 25px 0;
